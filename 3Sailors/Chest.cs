@@ -7,7 +7,7 @@ namespace _3Sailors
 {
     public class Chest: IHoldCoins
     {
-        public int Coins { get; }
+        public int Coins { get; set; }
 
         public Chest(int coins)
         {
@@ -25,9 +25,10 @@ namespace _3Sailors
             return GetCoins(Coins);
         }
 
-        public void PutCoins(int amount)
+        public int PutCoins(int amount)
         {
             Coins += amount;
+            return amount;
         }
     }
 }

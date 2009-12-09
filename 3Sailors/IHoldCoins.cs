@@ -7,8 +7,8 @@ namespace _3Sailors
 {
     public interface IHoldCoins
     {
-        public int GetCoins(int amount);
-        public int GetAllCoins();
-        public void PutCoins(int amount);
+        int GetCoins(int amount);
+        int GetAllCoins();
+        int PutCoins(int amount);
     }
 }
